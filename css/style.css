@@ -6,11 +6,11 @@ body {
     padding: 0;
     background: #000;
     font-family: 'PT Sans', sans-serif;
-    background-image: url(https://cdn.hipwallpaper.com/m/76/6/eYTXl4.jpg);
+    background-image:url('/img/background-home.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size:contain;
+    background-size:cover;
     
 
     
