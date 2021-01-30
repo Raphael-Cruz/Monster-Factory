@@ -3,11 +3,19 @@ body {
     padding: 0;
     background: #000;
     font-family: 'PT Sans', sans-serif;
- 
+    
+}
+
+h5{
+    color:white;
 }
 
 
 .navbar{
-    background-color: rgb(17, 19, 18);
+    background-image: linear-gradient(#212529, #343a40)
 }
 
+footer{
+
+    background-image: linear-gradient(#212529, #343a40)
+}
