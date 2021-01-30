@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 
 
 body {
@@ -13,6 +11,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size:contain;
+    
 
     
 }
@@ -24,8 +23,7 @@ h5{
 
 .navbar{
     
-    text-decoration: solid;
-    text-shadow: #343a40;
+   color: white;
 }
 
 footer{
