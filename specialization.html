@@ -19,17 +19,13 @@
     <title>Monster Factory</title>
 </head>
 
-<header>
+<header class="jumbotron">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-xl-2 m-4">
-                <a class="btn btn-secondary text-nowrap" id="joinus">JOIN US</a>
-            </div>
-        </div>
+        
 
         <nav class="navbar navbar-expand-sm navbar-dark text-white fixed-top">
 
-            <a class="navbar-brand" href="#"> <img src="img/logoLight.png" height="120" width="120"> </a>
+            <a class="navbar-brand" href="index.html"> <img src="img/logoLight.png" height="120" width="120"> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gymNavbar" style="background-color:rgba(255, 255, 255, 0.623); border-color:rgba(255, 254, 252, 0.993);">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,10 +37,15 @@
                             Home</a></li>
                     <li class="nav-item "><a class="nav-link" href="about.html">
                             About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="specialization.html">Specialization</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
+                    <li class="nav-item active"><a class="nav-link active" href="specialization.html">Specialization</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+                    <div class="row">
+                        <div class="col-md-4 col-xl-2 m-4">
+                            <a class="btn btn-secondary btn-lg text-nowrap" href="pricepage.html" id="joinus">JOIN US</a>
+                        </div>
+                    </div>
                 </ul>
             </div>
 
@@ -61,79 +62,82 @@
 <body class="specialization">
 
     
-    <div class="container">
-        <br><br>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="#body" role="tab" data-toggle="tab">Body Building</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#power" role="tab" data-toggle="tab"> Powerlifiting</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#cross" role="tab" data-toggle="tab">Cross Fitness</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#gym" role="tab" data-toggle="tab">Gym</a>
-            </li>
-            
-        </ul>
+    <div class="container" id="tabContainer">
 
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade show" id="body">
-                
-                        <div class="media-body align-self-center">     
-                            <h3>Body Building</h3>
-                            <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own
-                                reviews!</p>
-                        </div>
+        <div class="row row-content m-5">
+            <div class="col" >
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#body" role="tab" data-toggle="tab">Body Building</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link " href="#power" role="tab" data-toggle="tab" > Powerlifting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cross" role="tab" data-toggle="tab">CrossFit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gym" role="tab" data-toggle="tab">Gym</a>
+                    </li>
                     
-            </div>
-            
+                </ul>
 
-            <div role="tabpanel" class="tab-pane fade" id="power">
-                <div class="col">
-                    <div class="media">
-                        <img class="d-flex ml-3 img-thumbnail" src="img/powerliftingIcon.png" >
-                        <div class="media-body align-self-center">  
-                            <h3>Powerlifiting</h3>
-                            <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the
-                                shores of the pristine React Lake is
-                                a favorite for fly fishers.</p>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade show active" id="body">
+                        <div class="col">
+                            <div class="media">
+                                <img id="bodyimg" class="d-flex mr-3 img-thumbnail" src="img/bodybuilderIcon.png" style="width: 140px; height: 140px;">
+                                <div class="media-body align-self-center">     
+                                    <h3>Body Building</h3>
+                                    <p class="d-none d-sm-block">The process of developing the musculature of the body through specific types of diet and physical exercise, such as weightlifting, especially for competitive exhibition.</p>
+                                </div>
+                            </div>
                         </div>
-                            
-                    </div>
-                </div>
-            </div>
 
-            <div role="tabpanel" class="tab-pane fade" id="cross">
-                <div class="col">
-                    <div class="media">
-                        <img class="d-flex ml-3 img-thumbnail" src="img/crossfitnessIcon.jpg" >
-                        <div class="media-body align-self-center">  
-                            <h3>Cross Fitness</h3>
-                            <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the
-                                shores of the pristine React Lake is
-                                a favorite for fly fishers.</p>
-                        </div>
-                            
                     </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="gym">
-                <div class="col">
-                    <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail" src="img/gymIcon.png">
-                        <div class="media-body align-self-center">
-                            <h3>Gym</h3>
-                            <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                    
+                    
+                    <div role="tabpanel" class="tab-pane fade" id="power">
+                        <div class="col">
+                            <div class="media">
+                                <img class="d-flex mr-3 img-thumbnail" src="img/powerliftingIcon.png" style="width: 140px; height: 140px;">
+                                <div class="media-body align-self-center">  
+                                    <h3 class="p-1"> Power lifting</h3>
+                                    <p class="d-none d-sm-block p-1"> The sport of lifting heavy weights in three different ways from a standing or lying position, but without lifting the weights above the head:
+                                        Powerlifting is comprised of three lifts the squat, the bench press and deadlift.</p>
+                                </div>
+                                    
+                            </div>
                         </div>
                     </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="cross">
+                        <div class="col">
+                            <div class="media">
+                                <img class="d-flex mr-3 img-thumbnail" src="img/crossfitnessIcon.jpg" style="width: 140px; height: 140px;">
+                                <div class="media-body align-self-center">  
+                                    <h3>CrossFit</h3>
+                                    <p class="d-none d-sm-block m-1" > CrossFit is a workout methodology that incorporates functional movements from different disciplines like strength training, gymnastics and sports, performed at different intensities and for varied time domains.</p>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="gym">
+                        <div class="col">
+                            <div class="media">
+                                <img class="d-flex mr-3 img-thumbnail" src="img/gymIcon.png"style="width: 140px; height: 140px;">
+                                <div class="media-body align-self-center">
+                                    <h3>Gym</h3>
+                                    <p class="d-none d-sm-block"> No Pain, No Gain, pure and simple weight lifting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
         </div>
-    
     </div>
         
 
@@ -147,14 +151,14 @@
                 <ul class="list-unstyled">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Specialization</a></li>
+                    <li><a href="specialization.html">Specialization</a></li>
 
                 </ul>
             </div>
             <div class="col" style="margin-top:40px; padding-left: 0;">
                 <ul class="list-unstyled">
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Locations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="locations.html">Locations</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
             </div>
@@ -178,7 +182,11 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
    
-  
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 </body>
 

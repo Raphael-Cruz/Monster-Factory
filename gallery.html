@@ -14,20 +14,13 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-
+    
     <link rel="stylesheet" href="css/style.css" />
-
-
     <title>Monster Factory</title>
 </head>
 
-
-
-
 <header class="jumbotron">
-    
     <div class="container">
-        
         
 
         <nav class="navbar navbar-expand-sm navbar-dark text-white fixed-top">
@@ -40,19 +33,18 @@
             <div class="collapse navbar-collapse navbar-right" id="gymNavbar">
 
                 <ul class="navbar-nav " id="navbaritems">
-                    <li class="nav-item active"> <a class="nav-link active" href="index.html">
+                    <li class="nav-item active"> <a class="nav-link" href="index.html">
                             Home</a></li>
                     <li class="nav-item "><a class="nav-link" href="about.html">
                             About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="specialization.html">Specialization</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item "><a class="nav-link " href="specialization.html">Specialization</a></li>
+                    <li class="nav-item "><a class="nav-link active" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
                     <div class="row">
                         <div class="col-md-4 col-xl-2 m-4">
                             <a class="btn btn-secondary btn-lg text-nowrap" href="pricepage.html" id="joinus">JOIN US</a>
                         </div>
-                    
                     </div>
                 </ul>
             </div>
@@ -67,14 +59,55 @@
 
 
 
-<body class="home">
+<body class="gallery">
 
     
-   
+    <div class="container ml-5 pl-5" >
+    
+        <div class="row row-content mt-5 pt-5">
+            <div class="col-3 col-md-2 col-sm-1 mx-auto" >
+                
+                <img class="galleryimg" id="gallery" src="img/g1.jpg" style="width: 350px; height: 200px;">
+
+
+            </div>
+            
+            <div class="col-3 col-md-2 col-sm-1 mx-auto">
+
+                <img class="galleryimg" id="gallery2" src="img/g2.jpg" style="width: 350px; height: 200px;">
+
+
+            </div>
+            
+            <div class="col-3 col-md-2 col-sm-1 mx-auto">
+
+                <img class="galleryimg" id="gallery3" src="img/g3.jpg" style="width: 350px; height: 200px;">
+
+
+            </div>
+        </div>
+        <div class="row row-content mt-1 pt-1">
+            <div class="col-3 col-md-2 col-sm-1 mx-auto" >
+                
+                <img class="galleryimg" id="gallery4" src="img/g4.jpg" style="width: 350px; height: 200px;">
+
+
+            </div>
+            
+            <div class="col-3 col-md-2 col-sm-1 mx-auto">
+
+                <img class="galleryimg" id="gallery5" src="img/g5.jpg" style="width: 350px; height: 200px;">
+
+
+            </div>
+            
+        </div>
+    </div>
+        
 
 
 <footer class="footer">
-  
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-4  col-sm-2 offset-1" style="margin-top: 10px;">
@@ -103,16 +136,7 @@
                 <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
 
             </div>
-<!--
-            <div class="col-lg-3 col-sm-block m-auto" text-center>
-                <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
-                    1-123-123-1234</a> <br>
-                <a role="button" class="btn btn-link" href="mailto:monsterfactory@gym.com"><i
-                        class="fa fa-envelope-o"></i> monsterfactory@gym.com</a>
-            </div>
-        </div>
-    </div>
--->
+
 
 </footer>
     
@@ -120,6 +144,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+   
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 </body>
 
