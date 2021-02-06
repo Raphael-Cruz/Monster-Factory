@@ -44,8 +44,10 @@ font-family: 'PT Sans', sans-serif;
 
 body.locations {
 
+   
     background: #000;
     font-family: 'PT Sans', sans-serif;
+  
     
     }
     
@@ -494,4 +496,56 @@ border: 2px solid gray;
     width: fit-content;
     
     }
+}
+
+.map-grid{
+    position: absolute;
+    border: solid 5px green ;
+    width: 70%;
+    height: 370px;
+    margin-left: 15%;
+
+    
+}
+
+iframe{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+.contact-box{
+    
+    color: rgba(255, 255, 255, 0.76);
+   
+    width: 15%;
+    display: block;
+}
+
+.address-box{
+    
+    border: 2px solid rgb(175, 167, 167);
+   
+ 
+}
+
+.phone-box{
+    
+    
+    border: 2px solid rgb(175, 167, 167);
+    
+ 
+}
+ 
+.email-box{
+  
+    border: 2px solid rgb(175, 167, 167);
+    
+ 
+}
+
+.hours-box{
+    border: 2px solid rgb(175, 167, 167);
+    font-size:14px;
 }

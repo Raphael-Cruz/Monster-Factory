@@ -16,20 +16,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
     <link rel="stylesheet" href="css/style.css" />
-
-
     <title>Monster Factory</title>
 </head>
 
-
 <header class="jumbotron">
     <div class="container">
-        
+
 
         <nav class="navbar navbar-expand-sm navbar-dark text-white fixed-top">
 
             <a class="navbar-brand" href="index.html"> <img src="img/logoLight.png" height="120" width="120"> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gymNavbar" style="background-color:rgba(255, 255, 255, 0.623); border-color:rgba(255, 254, 252, 0.993);">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gymNavbar"
+                style="background-color:rgba(255, 255, 255, 0.623); border-color:rgba(255, 254, 252, 0.993);">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -38,15 +36,16 @@
                 <ul class="navbar-nav " id="navbaritems">
                     <li class="nav-item active"> <a class="nav-link" href="index.html">
                             Home</a></li>
-                    <li class="nav-item "><a class="nav-link active" href="about.html">
+                    <li class="nav-item "><a class="nav-link" href="about.html">
                             About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="specialization.html">Specialization</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
-                    <li class="nav-item"><a class="nav-link " href="contact.html">Contacts</a></li>
+                    <li class="nav-item "><a class="nav-link " href="specialization.html">Specialization</a></li>
+                    <li class="nav-item "><a class="nav-link " href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link " href="locations.html">Locations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contacts</a></li>
                     <div class="row">
                         <div class="col-md-4 col-xl-2 m-4">
-                            <a class="btn btn-secondary btn-lg text-nowrap" href="pricepage.html" id="joinus">JOIN US</a>
+                            <a class="btn btn-secondary btn-lg text-nowrap" href="pricepage.html" id="joinus">JOIN
+                                US</a>
                         </div>
                     </div>
                 </ul>
@@ -61,38 +60,39 @@
 </header>
 
 
-<body class="about">
 
+<body class="locations">
 
+    <div class="contact-form">
+        <div class="container">
 
-    <div class="container">
-        <div class="row row-content">
-            <div class="col-4 col-sm-2 ">
-
-                <div class="about-mid ">
-
-                    <h2> Monster Factory</h2>
-                    <h4>Unleash The Best</h4>
+            <form action="#" method="post">
+                <div class="contact-left-form">
+                    <div class="field-input">
+                        <span class="field-icon fa fa-user" aria-hidden="true"></span>
+                        <input type="text" placeholder="Name" name="name" required="">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="field-input">
+                        <span class="field-icon  fa fa-envelope-o fa-lg" aria-hidden="true"></span>
+                        <input type="email" placeholder="Email" name="email" class="email" required="">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="field-input">
+                        <span class="field-icon  fa fa-phone" aria-hidden="true"></span>
+                        <input type="text" class="phone" placeholder="phone" name="phone" required="">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
-
-                <div class="col-4 " id="image1">
-                    <img id="img1" src="img/aboutimg1.jpg" style="height: 200px; width: 250px;">
-                </div>
-                <div class="col-4 " id="image2">
-                    <img id="img2" src="img/aboutimg2.jpg" style="height: 200px; width: 250px;">
-                </div>
-            </div>
+                <div class="clear"></div>
+                <textarea placeholder="Your Message" name="message" required=""></textarea>
+                <button class="btn1">Submit message</button>
+            </form>
         </div>
-        
-   
-
-    <div>
-        <p class="p1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laborum,
-            quidem mollitia iste dolorum </p>
-        <p class="p2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laborum, quidem mollitia iste
-            dolorum </p>
     </div>
-</div>
+    </div>
+
+
 
     <footer class="footer">
 
@@ -125,8 +125,6 @@
                             class="fa fa-twitter"></i></a>
 
                 </div>
-            </div>
-        </div>
 
 
     </footer>
@@ -135,6 +133,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 </body>
 
