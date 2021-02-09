@@ -19,50 +19,36 @@
     <title>Monster Factory</title>
 </head>
 
-<header class="jumbotron">
-    <div class="container">
-        
-
-        <nav class="navbar navbar-expand-sm navbar-dark text-white fixed-top">
-
-            <a class="navbar-brand" href="index.html"> <img src="img/logoLight.png" height="120" width="120"> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gymNavbar" style="background-color:rgba(255, 255, 255, 0.623); border-color:rgba(255, 254, 252, 0.993);">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse navbar-right" id="gymNavbar">
-
-                <ul class="navbar-nav " id="navbaritems">
-                    <li class="nav-item active"> <a class="nav-link" href="index.html">
-                            Home</a></li>
-                    <li class="nav-item "><a class="nav-link" href="about.html">
-                            About</a></li>
-                    <li class="nav-item active"><a class="nav-link active" href="specialization.html">Specialization</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
-                    <li class="nav-item"><a class="nav-link " href="contact.html">Contacts</a></li>
-                    <div class="row">
-                        <div class="col-md-4 col-xl-2 m-4">
-                            <a class="btn btn-secondary btn-lg text-nowrap" href="pricepage.html" id="joinus">JOIN US</a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-
-
-        </nav>
-
-
-
-    </div>
-</header>
-
-
+    
+<div class="container-fluid" id="navContainer">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+          <a class="navbar-brand" href="index.html"><img src="img/logoLight.png" height="140px" width="140px"></a>      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+            <ul class="navbar-nav" id="navbaritems">
+                <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item "><a class="nav-link" href="about.html"> About</a></li>
+            <li class="nav-item"><a class="nav-link" href="specialization.html">Specialization</a></li>
+             <li class="nav-item"><a class="nav-link" href="gallery.html"> Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="locations.html"> Locations</a></li>
+            <li class="nav-item"><a class="nav-link text-nowrap" href="contact.html"> Contact Us</a></li>
+            </ul>
+            <span class="navbar-text ml-auto">
+                <a href="pricepage.html" role="button" id="joinus">
+                    <i class="btn btn-secondary btn-lg text-nowrap"> JOIN US</i>
+                </a>
+            </span>
+        </div>
+    </nav>
+</div>  
 
 <body class="specialization">
 
-    
-    <div class="container" id="tabContainer">
+          
+
+    <div class="container p-5" id="tabContainer">
 
         <div class="row row-content m-5">
             <div class="col" >
@@ -89,7 +75,7 @@
                                 <img id="bodyimg" class="d-flex mr-3 img-thumbnail" src="img/bodybuilderIcon.png" style="width: 140px; height: 140px;">
                                 <div class="media-body align-self-center">     
                                     <h3>Body Building</h3>
-                                    <p class="d-none d-sm-block">The process of developing the musculature of the body through specific types of diet and physical exercise, such as weightlifting, especially for competitive exhibition.</p>
+                                    <p class="d-none d-md-block ">The process of developing the musculature of the body through specific types of diet and physical exercise, such as weightlifting, especially for competitive exhibition.</p>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +89,7 @@
                                 <img class="d-flex mr-3 img-thumbnail" src="img/powerliftingIcon.png" style="width: 140px; height: 140px;">
                                 <div class="media-body align-self-center">  
                                     <h3 class="p-1"> Power lifting</h3>
-                                    <p class="d-none d-sm-block p-1"> The sport of lifting heavy weights in three different ways from a standing or lying position, but without lifting the weights above the head:
+                                    <p class="d-none d-md-block p-1"> The sport of lifting heavy weights in three different ways from a standing or lying position, but without lifting the weights above the head:
                                         Powerlifting is comprised of three lifts the squat, the bench press and deadlift.</p>
                                 </div>
                                     
@@ -117,7 +103,7 @@
                                 <img class="d-flex mr-3 img-thumbnail" src="img/crossfitnessIcon.jpg" style="width: 140px; height: 140px;">
                                 <div class="media-body align-self-center">  
                                     <h3>CrossFit</h3>
-                                    <p class="d-none d-sm-block m-1" > CrossFit is a workout methodology that incorporates functional movements from different disciplines like strength training, gymnastics and sports, performed at different intensities and for varied time domains.</p>
+                                    <p class="d-none d-md-block  m-1" > CrossFit is a workout methodology that incorporates functional movements from different disciplines like strength training, gymnastics and sports, performed at different intensities and for varied time domains.</p>
                                 </div>
                                     
                             </div>
@@ -129,7 +115,7 @@
                                 <img class="d-flex mr-3 img-thumbnail" src="img/gymIcon.png"style="width: 140px; height: 140px;">
                                 <div class="media-body align-self-center">
                                     <h3>Gym</h3>
-                                    <p class="d-none d-sm-block"> No Pain, No Gain, pure and simple weight lifting.</p>
+                                    <p class="d-none d-md-block "> No Pain, No Gain, pure and simple weight lifting.</p>
                                 </div>
                             </div>
                         </div>
@@ -142,39 +128,43 @@
         
 
 
-<footer class="footer">
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-4  col-sm-2 offset-1" style="margin-top: 10px;">
-                <h5>Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="specialization.html">Specialization</a></li>
+    <footer class="footer">
 
-                </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 col-sm-4">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="specialization.html">Specialization</a></li>
+    
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-4">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-4 text-center">
+    
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+    
+                </div>
+                
             </div>
-            <div class="col" style="margin-top:40px; padding-left: 0;">
-                <ul class="list-unstyled">
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="locations.html">Locations</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-sm-5 text-left m-auto">
-
-                <h5 class="m-4">Social</h5>
-                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
-                        class="fa fa-instagram"></i></a>
-                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
-                        class="fa fa-facebook"></i></a>
-                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-
-            </div>
-
-
-</footer>
+       
+        </div>
+    </footer>
     
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -182,11 +172,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
    
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+ 
 
 </body>
 

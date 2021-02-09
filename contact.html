@@ -18,116 +18,135 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Monster Factory</title>
 </head>
+          
+<div class="container-fluid" id="navContainer">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+          <a class="navbar-brand" href="index.html"><img src="img/logoLight.png" height="140px" width="140px"></a>      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+            <ul class="navbar-nav" id="navbaritems">
+                <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item "><a class="nav-link" href="about.html"> About</a></li>
+            <li class="nav-item"><a class="nav-link" href="specialization.html">Specialization</a></li>
+             <li class="nav-item"><a class="nav-link" href="gallery.html"> Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="locations.html"> Locations</a></li>
+            <li class="nav-item"><a class="nav-link text-nowrap" href="contact.html"> Contact Us</a></li>
+            </ul>
+            <span class="navbar-text ml-auto">
+                <a href="pricepage.html" role="button" id="joinus">
+                    <i class="btn btn-secondary btn-lg text-nowrap"> JOIN US</i>
+                </a>
+            </span>
+        </div>
+    </nav>
+</div>  
 
-<header class="jumbotron">
+
+<body class="contact">
+
     <div class="container">
-
-
-        <nav class="navbar navbar-expand-sm navbar-dark text-white fixed-top">
-
-            <a class="navbar-brand" href="index.html"> <img src="img/logoLight.png" height="120" width="120"> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gymNavbar"
-                style="background-color:rgba(255, 255, 255, 0.623); border-color:rgba(255, 254, 252, 0.993);">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse navbar-right" id="gymNavbar">
-
-                <ul class="navbar-nav " id="navbaritems">
-                    <li class="nav-item active"> <a class="nav-link" href="index.html">
-                            Home</a></li>
-                    <li class="nav-item "><a class="nav-link" href="about.html">
-                            About</a></li>
-                    <li class="nav-item "><a class="nav-link " href="specialization.html">Specialization</a></li>
-                    <li class="nav-item "><a class="nav-link " href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link " href="locations.html">Locations</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contacts</a></li>
-                    <div class="row">
-                        <div class="col-md-4 col-xl-2 m-4">
-                            <a class="btn btn-secondary btn-lg text-nowrap" href="pricepage.html" id="joinus">JOIN
-                                US</a>
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>Send us your Feedback</h2>
+                <hr />
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row">
+                        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
                         </div>
                     </div>
-                </ul>
+                    <div class="form-group row">
+                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                        </div>
+                        <div class="col-7">
+                            <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col offset-md-2 text-white">
+                            May we contact you?
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                <label for="contactYes" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                <label for="contactNo" class="form-check-label">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-secondary">Send Feedback</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-
-
-        </nav>
-
-
-
-    </div>
-</header>
-
-
-
-<body class="locations">
-
-    <div class="contact-form">
-        <div class="container">
-
-            <form action="#" method="post">
-                <div class="contact-left-form">
-                    <div class="field-input">
-                        <span class="field-icon fa fa-user" aria-hidden="true"></span>
-                        <input type="text" placeholder="Name" name="name" required="">
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="field-input">
-                        <span class="field-icon  fa fa-envelope-o fa-lg" aria-hidden="true"></span>
-                        <input type="email" placeholder="Email" name="email" class="email" required="">
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="field-input">
-                        <span class="field-icon  fa fa-phone" aria-hidden="true"></span>
-                        <input type="text" class="phone" placeholder="phone" name="phone" required="">
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <textarea placeholder="Your Message" name="message" required=""></textarea>
-                <button class="btn1">Submit message</button>
-            </form>
         </div>
     </div>
+
+  
+<footer class="footer">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-sm-4">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="specialization.html">Specialization</a></li>
+
+                </ul>
+            </div>
+            <div class="col-4 col-sm-4">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="col-4 col-sm-4 text-center">
+
+                <h5>Social</h5>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                        class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                        class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+
+            </div>
+            
+        </div>
+   
     </div>
-
-
-
-    <footer class="footer">
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-4  col-sm-2 offset-1" style="margin-top: 10px;">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="specialization.html">Specialization</a></li>
-
-                    </ul>
-                </div>
-                <div class="col" style="margin-top:40px; padding-left: 0;">
-                    <ul class="list-unstyled">
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="locations.html">Locations</a></li>
-                        <li><a href="#">Contacts</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-5 text-left m-auto">
-
-                    <h5 class="m-4">Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
-                            class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
-                            class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                            class="fa fa-twitter"></i></a>
-
-                </div>
-
-
-    </footer>
+</footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -135,11 +154,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+  
 
 </body>
 

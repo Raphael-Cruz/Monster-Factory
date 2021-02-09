@@ -1,0 +1,336 @@
+
+$color-background: #000;
+$border: 2px solid rgb(99, 95, 95);;
+
+
+
+
+.jumbotron{
+    
+    background-color: transparent;
+    
+   
+    color: white;
+}
+
+
+
+p{
+color: rgba(255, 255, 255, 0.76);
+font-size: 20px;
+}
+
+
+
+body.home {
+
+background: $color-background;
+font-family: 'PT Sans', sans-serif;
+background-image:url('/img/background-2.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size:cover;
+
+    footer {
+        .container-fluid{
+            position: fixed; 
+            bottom: 0;
+        }
+    }
+}
+
+body.about {
+margin: 0;
+padding: 0;
+background: $color-background;
+font-family: 'PT Sans', sans-serif;
+
+}
+
+
+body.gallery {
+
+background: $color-background;
+font-family: 'PT Sans', sans-serif;
+
+}
+
+body.contact {
+
+    background: $color-background;
+    font-family: 'PT Sans', sans-serif;
+    
+    label{
+        color:rgba(255, 255, 255, 0.884);
+    }
+ 
+}
+    
+
+body.locations{
+    background: $color-background;
+    font-family: 'PT Sans', sans-serif;
+
+    span {
+        color:rgba(255, 255, 255, 0.884);
+        
+    }
+   
+   
+    .container {
+        div{
+            border: $border;
+            padding: 2px;
+        }
+        li{
+            color: rgba(255, 255, 255, 0.884);
+            text-align:center;
+            padding: 1px;
+        }
+        i{
+            padding-left: 50%;
+                
+                
+        }
+    }
+}
+    
+
+    
+
+body.pricepage {
+
+    
+    background: $color-background;
+    font-family: 'PT Sans', sans-serif;
+    background-image: url(/img/background-3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+   .container{
+       display: block;
+   }
+    }
+
+
+body.specialization {
+
+background: $color-background;
+font-family: 'PT Sans', sans-serif;
+
+}
+
+header{
+    h4{
+        color: $color-background;
+        font-weight: bolder;
+    }
+}
+h2, h3, h4, h5{
+    color: rgba(255, 255, 255, 0.76);
+}
+
+
+
+.navbar{
+    color: white;
+    
+    li {
+
+        a{
+            border-radius: 5px;
+            padding: 7px 13px;
+        }
+        a:hover, a.active {
+            background: #a59daa;
+            transition: .5s;
+            text-decoration: underline;
+               
+        }
+        padding: 20px;
+    }
+}     
+    
+footer {
+    .container-fluid{
+        
+        bottom: 0;
+        background-image: linear-gradient(#212529, #343a40);
+        padding: 20px 40px; 
+    }
+    
+}
+
+ 
+
+#joinus{
+    border-radius: 10px;
+    padding: 10px 50px;
+    font-weight: bold;
+    
+}
+
+
+
+
+.navbar-dark .navbar-toggler-icon {
+background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke=' rgba(255, 255, 255, .9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-nav .nav-link {
+color: rgba(253, 253, 249, 0.959);
+font-size: 20px;
+
+
+}
+
+
+#pricepanel {
+    
+    p{
+    color: black;
+    }
+
+}
+
+
+.tab-content {
+    border: $border;
+border-top: none;
+padding: 10px;
+}
+
+.nav-link {
+color:  rgba(255, 255, 255, 0.89);
+transition: .5s;
+
+
+}
+
+.nav-link:active {
+background-color:  rgb(248, 248, 248);
+transition: .5s;
+
+
+
+}
+
+a, a:hover {
+color: rgb(255, 255, 255);
+text-decoration: none;
+
+
+}
+
+
+.galleryimg{
+    border: $border;
+}
+
+@media screen and (max-width: 375px){
+    .nav-item {
+    
+    position: relative;
+    
+    padding: 2px;
+    margin-top: 5px;
+    width: 100%;
+    border-bottom: none;
+    
+    }
+}
+@media screen and (max-width: 1150px){
+    .navbar {
+    
+      
+        li{
+            padding: 10px;
+        }
+    
+    }
+}
+
+@media screen and (max-width: 980px){
+    .navbar {
+    
+      
+        li{
+            padding: 0px;
+        }
+    
+    }
+}
+@media screen and (max-width: 768px){
+    .navbar {
+    
+      
+        li{
+            padding: 0px;
+        }
+    
+    }
+}
+
+
+
+@media screen and (max-width: 375px){
+    .tab-content {
+    
+    position: relative;
+    right: 25%;
+    border: $border;
+    width: 135%;
+    
+    }
+}
+
+@media screen and (max-width: 375px){
+    #tabContainer {
+    
+    position: relative;
+    top: 4rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .contact-form {
+    
+    display: block;
+    
+    
+    
+    }
+}
+
+.map-grid{
+    
+    border: $border;
+    width: 70%;
+    height: 370px;
+    margin-left: 15%;
+
+    
+}
+
+iframe{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+.contact-box{
+    
+    border: $border;
+    width: 15%;
+    
+}
+
+
+
+
+
+
+
