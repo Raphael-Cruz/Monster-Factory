@@ -43,6 +43,8 @@ body.pricepage {
 body.contact {
   background: #000;
   font-family: 'PT Sans', sans-serif; }
+  body.contact label {
+    color: rgba(255, 255, 255, 0.96); }
 
 body.locations {
   background: #000;
@@ -50,10 +52,11 @@ body.locations {
   body.locations #locationbox {
     color: rgba(255, 255, 255, 0.726);
     border: 2px solid #635f5f;
-    width: 100%; }
-  body.locations li {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  body.locations .container li {
     text-align: center; }
-  body.locations span i {
+  body.locations .container span i {
     padding-left: 50%; }
 
 body.specialization {
@@ -142,10 +145,6 @@ iframe {
 
 @media screen and (max-width: 992px) {
   #box {
-    display: block; } }
-
-@media screen and (max-width: 992px) {
-  #locationbox2 {
     display: block; } }
 
 .tab-content {

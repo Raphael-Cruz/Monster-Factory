@@ -88,9 +88,12 @@ body.contact {
     
     background: $color-background;
     font-family: 'PT Sans', sans-serif;
+    label{
+        color: rgba(255, 255, 255, 0.96);    }
     
   
 }
+
 body.locations {
 
     
@@ -101,18 +104,22 @@ body.locations {
         
         color: rgba(255, 255, 255, 0.726);
         border: $border;
-        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
                 
     }
-    li{
-    text-align: center;
-    }
-    
-    span i{
-        
-            padding-left: 50%;
+
+    .container{
+        li{
+            text-align: center;
+            }
+            
+            span i{
+                
+                    padding-left: 50%;
+                }
         }
-}
+    }
 
 
 
@@ -177,8 +184,6 @@ footer {
     font-weight: bold;
     
 }
-
-
 
 
 .navbar-dark .navbar-toggler-icon {
@@ -295,12 +300,7 @@ iframe{
         display: block;
     }
 }
-@media screen and (max-width: 992px){
-    #locationbox2{
-        display: block;
-        
-    }
-} 
+
 
 
  
